@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<header>
+    <img src="img/logoalura.png" alt="Logo de alura con la inicial da letra a">
+</header>
+
+<body>
+
+  <main class="main">
+    <section class="form">
+        <textarea class="textinput" cols="40" rows="6" placeholder="Ingrese el texto aqui" 
+        oninput="validarOnInput();"></textarea>
+        <h6 class="informacion">Solo letras minúsculas y sin acentos.</h6>
+        <div class="botones">
+          <button class="btnEncriptar" onclick="encriptar();">
+            Encriptar
+          </button>
+          <button class="btnDesencriptar" onclick="desencriptar();">
+            Desencriptar
+          </button>
+        </div>
+    </section>
+  
+    <section class="msgbox">
+      <textarea class="textencriptado" cols="18" rows="8" readonly id="textencriptado"
+      placeholder="Ningún mensaje fue encontrado, ingrese el texto a codificar o decodificar."></textarea>
+      <div class="boton">
+        <button class="botoncopiar" onclick="copiar();">
+            Copiar
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="copyright">&copy Alvaro Beltran 2022</p>
+</footer>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
